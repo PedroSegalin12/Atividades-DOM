@@ -1,0 +1,30 @@
+<head>
+    <title>Contador de cliques</title>
+</head>
+<body>
+    <button onclick="contar()">Contar</button>
+    <button onclick="resetar()">Resetar</button>
+    <div id="contador">Cliques: 0</div>
+
+    <script>
+        let cliques = 0
+       
+        function contar() {
+            cliques++
+            document.getElementById("contador").innerHTML="Cliques:" + cliques 
+        }
+        function resetar() {
+            cliques = 0
+            document.getElementById("contador").innerHTML= "Cliques: 0"
+        }
+    </script>
+</body>
+
+
+<!-- Primeiro prompt: Se eu quero que conte os cliques, como faço para colocar no código de html 
+ Usa-se o (++) -->
+ <!--Segundo prompt: Se eu quero que um contador comece em zero, como faço a div?
+<div id="contador">0</div>
+ -->
+<!-- terceiro prompt: Em um código de HTML e JAVASCRIPT que código uso pra pegar um texto e altera-lo 
+ innerHTML-->
