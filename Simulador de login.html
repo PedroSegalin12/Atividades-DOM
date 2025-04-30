@@ -1,0 +1,32 @@
+<head>
+    <title>Simulador de Login</title>
+</head>
+
+<body>
+    <h1>Bem vindo a minha página</h1>
+    <input type="text" id="usuario" placeholder="usuario">
+    <input type="text" id="senha" placeholder="senha">
+    <button onclick="verificarlogin()">Logar</button>
+    <div id="resultado"></div>
+
+    <script>
+        const usuariodefinido = "PedroSegalin12"
+        const senhadefinida = "12345678"
+        function verificarlogin() {
+            const usuario = document.getElementById("usuario").value
+            const senha = document.getElementById("senha").value
+            const resultado = document.getElementById("resultado")
+            if (usuario === usuariodefinido && senha === senhadefinida) {
+                resultado.innerHTML = ("Login feito com sucesso")
+            } else {
+                resultado.innerHTML = ("Usuario incorreto, tente novamente")
+            }
+        }
+    </script>
+</body>
+
+
+
+
+<!-- Para verificar se tenho um login certo, tenho que criar duas constante, uma com certo, e outra da senha, ou somente uma? -->
+<!-- O que deu errado no meu código? -->
