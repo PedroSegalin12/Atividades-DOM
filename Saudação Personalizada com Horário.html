@@ -1,0 +1,33 @@
+<head>
+    <title>Saudação personalizada</title>
+</head>
+<body>
+    <h1>Bem vindo a minha página, digite seu nome: </h1>
+    <input type="text"  id="nome" placeholder= "Qual é seu nome?">
+    <button onclick="saudacao()">Saudar</button>
+    <div id="mensagem"></div>
+
+    <script>
+        function saudacao(){
+        const nome= document.getElementById("nome").value
+        const hora = new Date().getHours()
+        let saudacao
+        
+        if (hora >=4 && hora <12){
+            saudacao = "Bom dia"
+        }
+        else if (hora >= 12 && hora <18)
+            saudacao = "Boa tarde"
+        else {
+                saudacao = "Boa noite"
+            }
+
+            document.getElementById ('mensagem').innerHTML = saudacao + ', ' + nome + "."
+        }
+    </script>
+</body>
+
+<!-- Como usar a função hora -->
+ <!--  -->
+<!-- Como usar a hora atual em html e javascript -->
+<!-- Como -->
